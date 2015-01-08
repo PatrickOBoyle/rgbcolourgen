@@ -7,17 +7,19 @@
 		<link href="style.css" title="Style" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-        <div>
-            <h1>Click "generate" to generate a random RGB colour</h1>
-            <form name="generator" method="post">
-                <input type="button" value="Generate" onclick="main();">
-            </form>    
+        <div class="wrapper">
+            <div>
+                <h1>Click "generate" to generate a random RGB colour</h1>
+                <form>
+                    <input type="button" value="Generate" onclick="main();">
+                </form>    
+            </div>
+
+            <br>
+
+            <p id="generatedColour">RGB(0, 0, 0)</p>
+            
+            <div id="displayColour" class="wrapper" style="background-color: RGB(0, 0, 0); height: 100px; width: 100px;"></div>
         </div>
-        
-        <br>
-        <br>
-        
-        <p id="generatedColour">RGB(0, 0, 0)</p>
-        <div id="displayColour" style="background-color: RGB(0, 0, 0); height: 100px; width: 100px;"></div>
     </body>
 </html>
